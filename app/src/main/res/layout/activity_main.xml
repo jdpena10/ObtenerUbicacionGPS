@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_location"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Obtener Ubicación" />
+        android:padding="16dp"
+        android:layout_marginTop="100dp">
 
-    <TextView
-        android:id="@+id/tv_latitud"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latitud: "
-        android:paddingTop="16dp" />
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obtener Ubicación" />
 
-    <TextView
-        android:id="@+id/tv_longitud"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Longitud: "
-        android:paddingTop="8dp" />
+        <TextView
+            android:id="@+id/tv_latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitud: "
+            android:paddingTop="16dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitud: "
+            android:paddingTop="8dp" />
+
+
+        <Button
+            android:id="@+id/btn_iniciar_paseo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Paseo"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_simular_movimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simular Movimiento"
+            android:layout_marginTop="16dp"/>
+
+
+        <Button
+            android:id="@+id/btn_ver_ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Ruta en Google Maps" />
+    </LinearLayout>
+</ScrollView>
